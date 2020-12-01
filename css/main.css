@@ -1,3 +1,12 @@
 #searchBar{
     border: 2px solid rgb(245, 192, 94);
+    display: flex;
+    font-size: 10px;
+}
+body{
+    background-color: grey;
+}
+.popover{
+    background-color: white;
+    margin-top: 5px;
 }

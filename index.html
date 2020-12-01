@@ -4,62 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="https://kit.fontawesome.com/d5fef80fd3.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Reserva hotelera</title>
 </head>
 
 <body>
+    <span><i class="fas fa-bed"></i> Hoteles </span>
     <div id="searchBar">
-        <span><i class="fas fa-bed"></i> Hoteles </span>
-        <form id="hotelForm">
-            <div class="input-group mb-3 agrupador" id="destino">
-                <label class="input-group basic-url">Hotel o destino</label>
-                <input id="lugar" type="text" name="destino" placeholder="Hotel o destino">
-            </div>
-            <div id="dateEnter">
-                <label class="input-group basic-url">Fecha de entrada</label>
-                <input id="fecha" type="date" name="fechaEntrada">
-            </div>
-            <div id=" noches">
-                <label class="input-group basic-url">Número de noches</label>
-                <select id="noches" name="noches">
-                    <option hidden selected>0 Noches</option>
-                    <optgroup label="COMUNES">
-                        <option value="4">4 Noches</option>
-                        <option value="7">7 Noches</option>
-                        <option value="10">10 Noches</option>
-                        <option value="14">14 Noches</option>
-                    </optgroup>
-                    <optgroup label="DIARIAS">
-                        <option value="1">1 Noche</option>
-                        <option value="2">2 Noches</option>
-                        <option value="3">3 Noches</option>
-                        <option value="4">4 Noches</option>
-                        <option value="5">5 Noches</option>
-                        <option value="6">6 Noches</option>
-                        <option value="7">7 Noches</option>
-                        <option value="8">8 Noches</option>
-                    </optgroup>
-                </select>
-            </div>
-            <label role="button">Habitaciones</label>
-            <input id="Habitaciones" type="text" readonly data-toggle="popover" data-content="hola">
-            <a data-toggle="popover" data-content="hola">Hola</a>
+        <div class="input-group mb-3 agrupador" id="destino">
+            <label class="input-group basic-url">Hotel o destino</label>
+            <input id="lugar" size="10" type="text" name="destino" placeholder="Hotel o destino">
+        </div>
+        <div id="dateEnter">
+            <label class="input-group basic-url">Fecha de entrada</label>
+            <input id="fecha" type="date" name="fechaEntrada">
+        </div>
+        <div id=" noches">
+            <label class="input-group basic-url">Número de noches</label>
+            <select id="noches" name="noches">
+                <option hidden selected>0 Noches</option>
+                <optgroup label="COMUNES">
+                    <option value="4">4 Noches</option>
+                    <option value="7">7 Noches</option>
+                    <option value="10">10 Noches</option>
+                    <option value="14">14 Noches</option>
+                </optgroup>
+                <optgroup label="DIARIAS">
+                    <option value="1">1 Noche</option>
+                    <option value="2">2 Noches</option>
+                    <option value="3">3 Noches</option>
+                    <option value="4">4 Noches</option>
+                    <option value="5">5 Noches</option>
+                    <option value="6">6 Noches</option>
+                    <option value="7">7 Noches</option>
+                    <option value="8">8 Noches</option>
+                </optgroup>
+            </select>
+        </div>
+        <label role="button">Habitaciones</label>
+
+        <input id="habitaciones" size="23" type="text" readonly placeholder="0 habitaciones & 0 personas"
+            data-toggle="popover" data-trigger="focus" data-content="">
     </div>
-    <input type="submit" id="search" name="submit" value="Buscar">
-    </form>
-    </div>
-    <script src="js/main.js">
+    <button type="button" id="buscar" class="btn btn-lg btn-danger" role="button">Buscar</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-    <script>
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-        })
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/d5fef80fd3.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
