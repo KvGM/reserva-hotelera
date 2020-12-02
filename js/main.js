@@ -40,7 +40,8 @@ fechaActual();
 
 $("#habitaciones").popover({
     placement: "bottom",
-    html: true
+    html: true,
+    content: crearNuevaRoom(0)
 });
 document.getElementById('habitaciones').addEventListener('click', function () {
     crearNuevaRoom(0)
@@ -73,6 +74,7 @@ function crearNuevaRoom(nHabitacion) {
     bloque.appendChild(grupoAdultos);
     bloque.appendChild(grupoNinios);
     // document.body.appendChild(bloque);
+    return bloque;
     console.log(bloque);
 }
 
