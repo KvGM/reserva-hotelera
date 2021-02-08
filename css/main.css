@@ -4,9 +4,18 @@
     font-size: 10px;
 }
 body{
-    background-color: grey;
+    /* background-color: grey; */
 }
-.popover{
+/* .popover{
     background-color: white;
     margin-top: 5px;
+} */
+
+#zona{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    margin-top: 10%;
+    margin-left: 20%;
 }

@@ -1,0 +1,22 @@
+{
+  "name": "hoteles_popover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KvGM/reserva-hotelera.git"
+  },
+  "author": "@KvGM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KvGM/reserva-hotelera/issues"
+  },
+  "homepage": "https://github.com/KvGM/reserva-hotelera#readme",
+  "devDependencies": {
+    "eslint": "^7.19.0"
+  }
+}
