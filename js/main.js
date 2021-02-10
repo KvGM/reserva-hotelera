@@ -104,7 +104,6 @@ function addRoom() {
 
 function crearRoom() {
     let totalRoomsCreadas = document.querySelectorAll('.room').length;
-    let agrupadorRoom = null;
     if (totalRoomsCreadas < maxHabitaciones) {
         agrupadorRoom = createNode('div', '', ['room'], []);
         agrupadorRoom.appendChild(createNode('h4', `${totalHabitaciones} Habitación`, [], []));
